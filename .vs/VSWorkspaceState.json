@@ -3,10 +3,12 @@
     "",
     "\\src",
     "\\src\\app",
+    "\\src\\app\\login",
     "\\src\\app\\tab1",
+    "\\src\\app\\tabs",
     "\\src\\assets",
     "\\src\\environments"
   ],
-  "SelectedNode": "\\src\\theme",
+  "SelectedNode": "\\src\\app\\login\\login.page.html",
   "PreviewInSolutionExplorer": false
 }
