@@ -3,12 +3,13 @@
     "",
     "\\src",
     "\\src\\app",
+    "\\src\\app\\home",
     "\\src\\app\\login",
-    "\\src\\app\\tab1",
+    "\\src\\app\\perfil",
     "\\src\\app\\tabs",
     "\\src\\assets",
     "\\src\\environments"
   ],
-  "SelectedNode": "\\src\\app\\login\\login.page.html",
+  "SelectedNode": "\\src\\app\\home\\home.page.html",
   "PreviewInSolutionExplorer": false
 }

@@ -8,31 +8,35 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: 'login',
-        loadChildren: () => import('../login/login.module').then(m => m.LoginPageModule)
+        path: 'home',
+        loadChildren: () => import('../home/home-routing.module').then(m => m.HomePageRoutingModule)
       },
       {
-        path: 'tab1',
-        loadChildren: () => import('../tab1/tab1.module').then(m => m.Tab1PageModule)
+        path: 'filter',
+        loadChildren: () => import('../filter/filter-routing.module').then(m => m.FilterPageRoutingModule)
       },
       {
-        path: 'tab2',
-        loadChildren: () => import('../tab2/tab2.module').then(m => m.Tab2PageModule)
+        path: 'favorite',
+        loadChildren: () => import('../favorite/favorite-routing.module').then(m => m.FavoritePageRoutingModule)
       },
       {
-        path: 'tab3',
-        loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
+        path: 'perfil',
+        loadChildren: () => import('../perfil/perfil-routing.module').then(m => m.PerfilPageRoutingModule)
+      },
+      {
+        path: 'settings',
+        loadChildren: () => import('../settings/settings-routing.module').then(m => m.SettingsPageRoutingModule)
       },
       {
         path: '',
-        redirectTo: '/tabs/login',
+        redirectTo: '/tabs/home',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/login',
+    redirectTo: '/tabs/home',
     pathMatch: 'full'
   }
 ];

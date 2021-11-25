@@ -1,3 +1,4 @@
+
 <ion-header>
   <ion-toolbar>
     <ion-title>login</ion-title>
@@ -5,36 +6,17 @@
 </ion-header>
 
 <ion-content>
-  <script type="module">
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-analytics.js";
 
-  const firebaseConfig = {
-    apiKey: "AIzaSyATvei7e8asKyL0rTIyK3r59HxwzhQJGLI",
-    authDomain: "lojaev-data.firebaseapp.com",
-    projectId: "lojaev-data",
-    storageBucket: "lojaev-data.appspot.com",
-    messagingSenderId: "836028861134",
-    appId: "1:836028861134:web:a944f53136cafcc234de9f",
-    measurementId: "G-R6SQYZXJWH"
-  };
-
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-  </script>
   <center>
     <div style="border:1px solid blue;margin-top:60%">
       <ion-input placeholder="Usuario" id="user"></ion-input><br>
       <ion-input placeholder="Contraceña" id="password"></ion-input>
+      <ion-button expand="block" fill="outline">Outline + Block</ion-button>
+      <button onclick="loginPrincipal()">otro boton</button>
     </div>
   </center>
-  <script>
-    var database = firebase.database();
-    
-    var starCountRef = firebase.database().ref('posts/' + postId + '/starCount');
-    starCountRef.on('value', (snapshot) => {
-      const data = snapshot.val();
-      updateStarCount(postElement, data);
-    });
+  <script type="text/javascript">
+
   </script>
 </ion-content>
+
