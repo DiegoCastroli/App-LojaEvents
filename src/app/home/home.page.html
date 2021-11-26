@@ -1,70 +1,83 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Lojanidad</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-menu side="start" content-id="main-content">
+  <ion-header>
+    <ion-toolbar translucent>
+      <ion-title>Cuenta</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <div>
+      <ion-input placeholder="Usuario" id="user"></ion-input><br>
+      <ion-input placeholder="Contraceña" id="password"></ion-input>
+      <ion-button expand="block" fill="outline">Ingresar</ion-button>
+    </div>
+  </ion-content>
+</ion-menu>
 
-<ion-content>
-  <ion-item detail="false" href="https://www.ionicframework.com">
-    <ion-label>
-      Destacado
-    </ion-label>
-  </ion-item>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Lojanidad</ion-title>
+      <ion-buttons slot="start">
+        <ion-menu-button><ion-icon name="person-circle-outline"></ion-icon></ion-menu-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-slides pager="true" [options]="slideOpts" style="border-top:2px grey solid;border-bottom:2px grey solid;">
+      <ion-slide style="height:100px;width:90%; background:url('https://www.eluniverso.com/resizer/X5hdH-ZK1kAyInwn8KtsMH2q2R4=/1010x670/smart/filters:quality(70)/cloudfront-us-east-1.images.arcpublishing.com/eluniverso/BW7HANAQRBC4LJCCJRJ27LKW6Q.jpg')">
+        <h1>Slide 1</h1>
+      </ion-slide>
+      <ion-slide style="height: 100px; width: 90%; background: url('https://lh3.googleusercontent.com/proxy/HQmYjRptqLycF9LwOPiBLdt8l8whrC2gVHDDgQ0iEG4qOc7Lhciu74twUPNS6I4-k7GUTyoxGbvQ2mIUHSXORJf0tYxIbptBuxGxGIYjKSM8qz8YsF-oEnG7n_-pYallywIB4Ig8Kf3Yc1KmoydCwzuFpGEXwJs') ">
+        <h1>Slide 2</h1>
+      </ion-slide>
+      <ion-slide style="height: 100px; width: 90%; background: url('https://www.turismo.gob.ec/wp-content/uploads/2020/11/FIAVL-2020.jpg') ">
+        <h1>Slide 3</h1>
+      </ion-slide>
+    </ion-slides>
 
-  <ion-slides pager="true" [options]="slideOpts" style="border-top:2px grey solid;border-bottom:2px grey solid;">
-    <ion-slide style="height:100px;width:90%; background:url('https://www.eluniverso.com/resizer/X5hdH-ZK1kAyInwn8KtsMH2q2R4=/1010x670/smart/filters:quality(70)/cloudfront-us-east-1.images.arcpublishing.com/eluniverso/BW7HANAQRBC4LJCCJRJ27LKW6Q.jpg')">
-      <h1>Slide 1</h1>
-    </ion-slide>
-    <ion-slide style="height: 100px; width: 90%; background: url('https://lh3.googleusercontent.com/proxy/HQmYjRptqLycF9LwOPiBLdt8l8whrC2gVHDDgQ0iEG4qOc7Lhciu74twUPNS6I4-k7GUTyoxGbvQ2mIUHSXORJf0tYxIbptBuxGxGIYjKSM8qz8YsF-oEnG7n_-pYallywIB4Ig8Kf3Yc1KmoydCwzuFpGEXwJs') ">
-      <h1>Slide 2</h1>
-    </ion-slide>
-    <ion-slide style="height: 100px; width: 90%; background: url('https://www.turismo.gob.ec/wp-content/uploads/2020/11/FIAVL-2020.jpg') ">
-      <h1>Slide 3</h1>
-    </ion-slide>
-  </ion-slides>
+    <ion-card style="background: url('https://www.loja.gob.ec/files/noticias/2018/11/p1_1.jpg')">
+      <ion-card-header>
+        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+        <ion-card-title>Card Title</ion-card-title>
+      </ion-card-header>
 
-  <ion-card style="background: url('https://www.loja.gob.ec/files/noticias/2018/11/p1_1.jpg')">
-    <ion-card-header>
-      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-      <ion-card-title>Card Title</ion-card-title>
-    </ion-card-header>
+      <ion-card-content>
+        Keep close to Nature's heart... and break clear away, once in awhile,
+        and climb a mountain or spend a week in the woods. Wash your spirit clean.
+      </ion-card-content>
+    </ion-card>
+    <ion-card style="background: url('https://www.loja.gob.ec/files/noticias/2015/08/plantilla-original-redes_6.jpg')">
+      <ion-card-header>
+        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+        <ion-card-title>Card Title</ion-card-title>
+      </ion-card-header>
 
-    <ion-card-content>
-      Keep close to Nature's heart... and break clear away, once in awhile,
-      and climb a mountain or spend a week in the woods. Wash your spirit clean.
-    </ion-card-content>
-  </ion-card>
-  <ion-card style="background: url('https://www.loja.gob.ec/files/noticias/2015/08/plantilla-original-redes_6.jpg')">
-    <ion-card-header>
-      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-      <ion-card-title>Card Title</ion-card-title>
-    </ion-card-header>
+      <ion-card-content>
+        Keep close to Nature's heart... and break clear away, once in awhile,
+        and climb a mountain or spend a week in the woods. Wash your spirit clean.
+      </ion-card-content>
+    </ion-card>
+    <ion-card style="background: url('https://i2.wp.com/lojacity.com/wp-content/uploads/2012/09/Noche-de-luces-loja.jpg?ssl=1')">
+      <ion-card-header>
+        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+        <ion-card-title>Card Title</ion-card-title>
+      </ion-card-header>
 
-    <ion-card-content>
-      Keep close to Nature's heart... and break clear away, once in awhile,
-      and climb a mountain or spend a week in the woods. Wash your spirit clean.
-    </ion-card-content>
-  </ion-card>
-  <ion-card style="background: url('https://i2.wp.com/lojacity.com/wp-content/uploads/2012/09/Noche-de-luces-loja.jpg?ssl=1')">
-    <ion-card-header>
-      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-      <ion-card-title>Card Title</ion-card-title>
-    </ion-card-header>
+      <ion-card-content>
+        Keep close to Nature's heart... and break clear away, once in awhile,
+        and climb a mountain or spend a week in the woods. Wash your spirit clean.
+      </ion-card-content>
+    </ion-card>
+    <ion-card style="background:url('https://lahora.com.ec/contenido/cache/6a/con-una-noche-de-luces-y-musica-concluyen-las-fiestas-de-loja-federal-imagen-1-_20190924064741-2000x2000.jpg)">
+      <ion-card-header>
+        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+        <ion-card-title>Card Title</ion-card-title>
+      </ion-card-header>
 
-    <ion-card-content>
-      Keep close to Nature's heart... and break clear away, once in awhile,
-      and climb a mountain or spend a week in the woods. Wash your spirit clean.
-    </ion-card-content>
-  </ion-card>
-  <ion-card style="background:url('https://lahora.com.ec/contenido/cache/6a/con-una-noche-de-luces-y-musica-concluyen-las-fiestas-de-loja-federal-imagen-1-_20190924064741-2000x2000.jpg)">
-    <ion-card-header>
-      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-      <ion-card-title>Card Title</ion-card-title>
-    </ion-card-header>
-
-    <ion-card-content>
-      Keep close to Nature's heart... and break clear away, once in awhile,
-      and climb a mountain or spend a week in the woods. Wash your spirit clean.
-    </ion-card-content>
-  </ion-card>
-</ion-content>
+      <ion-card-content>
+        Keep close to Nature's heart... and break clear away, once in awhile,
+        and climb a mountain or spend a week in the woods. Wash your spirit clean.
+      </ion-card-content>
+    </ion-card>
+  </ion-content>
+</div>
